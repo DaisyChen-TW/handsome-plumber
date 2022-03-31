@@ -1,25 +1,10 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <Header />
-  <Sidebar />
-  <Introduction />
-
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </div>
+  <router-view/>
 </template>
-
-<script>
-import Header from './components/Header.vue'
-import Sidebar from './components/Sidebar.vue'
-import Introduction from './components/Introduction'
-
-export default {
-  name: 'App',
-  components: {
-    Header,
-    Sidebar,
-    Introduction
-  }
-}
-</script>
 
 <style>
 #app {
@@ -28,46 +13,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  /* margin-top: 60px; */
-}
-/*reset */
-html {
-  box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+#nav {
+  padding: 30px;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul,
-menu {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
 }
 
-table {
-  border: none;
-  border-spacing: 0;
-  border-collapse: collapse;
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
-
-th,
-td {
-  text-align: initial;
-}
-
-/*reset end*/
-
 </style>
