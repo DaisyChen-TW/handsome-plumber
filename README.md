@@ -1,5 +1,6 @@
 # handsome-plumber
-
+以水電為主題，使用vue開發一個小網頁做練習
+其中包含簡介、服務、服務範圍和聯絡的頁面
 ## Project setup
 ```
 npm install
@@ -8,16 +9,6 @@ npm install
 ### Compiles and hot-reloads for development
 ```
 npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
 
 ### Customize configuration
